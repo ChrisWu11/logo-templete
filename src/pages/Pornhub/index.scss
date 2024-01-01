@@ -1,33 +1,70 @@
 .Pornhub {
+  width: 100%;
   .editarea {
     border: 1px solid #333;
     border-radius: 10px;
     padding: 40px 50px;
-    margin: 40px 10px;
-    max-width: 100%;
+    margin: 40px auto;
     font-size: 60px;
     font-weight: 700;
+    // 宽度根据子元素自适应
+    width: fit-content;
+
     input {
       // 去除默认样式
       border: none;
       outline: none;
-      width: auto;
       height: 70px;
       font-weight: 700;
-      font-family: "sans-serif";
+      // font-family: "sans-serif";
+      &:focus {
+        border: 2px solid #fff;
+        border-radius: 10px;
+      }
     }
     .prefix {
       color: #fff;
+      border: 2px solid #black;
       padding: 5px 5px;
       width: auto;
-      background-color: black;
+      background-color: #000;
     }
 
     .postfix {
       color: #000;
       background-color: #f90;
+      border: 2px solid #f90;
       padding: 5px 10px;
       border-radius: 7px;
+    }
+  }
+  .customize {
+    display: flex;
+    justify-content: space-around;
+    color: #f90;
+    margin: auto;
+    width: 60%;
+    & > div {
+      .color-item,
+      .font-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        .item-name {
+          margin-right: 15px;
+        }
+        .item-input {
+          // border: 1px;
+        }
+        .item-btn {
+          font-size: 20px;
+          border: #fff 2px solid;
+          font-weight: 600px;
+          border-radius: 10px;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
