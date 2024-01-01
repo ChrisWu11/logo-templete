@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
 import Missing from "@/pages/Missing";
+import Pornhub from "@/pages/Pornhub";
 
 export default [
   {
@@ -9,6 +10,10 @@ export default [
   {
     path: "/missing",
     element: <Missing />,
+  },
+  {
+    path: "/pornhub",
+    element: <Pornhub />,
   },
 ] as {
   path: string;

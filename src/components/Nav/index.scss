@@ -1,0 +1,52 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 70%;
+  .nav-item {
+    margin: 0 10px;
+    cursor: pointer;
+    .pornhub {
+      color: #ffffff;
+      .prefix {
+        padding: 4px;
+      }
+      .postfix {
+        color: #ffffff;
+        background-color: #f90;
+        padding: 4px;
+        border-radius: 7px;
+      }
+    }
+    .youtube {
+      color: #ffffff;
+      .prefix {
+        padding: 4px;
+      }
+      .postfix {
+        color: #ffffff;
+        background-color: rgb(255, 0, 0);
+        padding: 4px;
+        border-radius: 7px;
+      }
+    }
+    .tourism {
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      &-zh {
+        padding: 4px 8px;
+        color: #ffffff;
+        background-color: #134ef0;
+        letter-spacing: 2px;
+      }
+      &-en {
+        padding: 4px 8px;
+        background-color: #ffffff;
+        color: #134ef0;
+        font-size: 14px;
+      }
+    }
+  }
+}

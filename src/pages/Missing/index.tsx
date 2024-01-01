@@ -3,6 +3,6 @@ import "./index.scss";
 
 export default function Missing() {
   return (
-    <div>Missing</div>
+    <div className='Missing'>Missing</div>
   )
 }
